@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+cachedir=/var/cosign/filter
+
+if [ -d $cachedir ]; then
+    # set the owner and change rights accordingly
+    chown -R www-data:www-data $cachedir
+    chmod 0755 $cachedir
+fi
+
+if [ "$1" = configure ] ; then
+    # only enable on new installs, not on upgrades
+    if [ -z "$2" ] ; then
+        a2enmod -q cosign
+    fi
+
+    # only restart if mod_cosign is enabled
+    if [ -e /etc/apache2/mods-enabled/cosign.load ] ; then
+        invoke-rc.d apache2 restart
+    fi
+fi

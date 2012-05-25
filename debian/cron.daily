@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Remove old remenants of cookies over 24 hours old. (CoSign's default cookie
+# expiration time.)
+find /var/cosign/filter -type f -mtime +1 -exec rm \{\} \;
+

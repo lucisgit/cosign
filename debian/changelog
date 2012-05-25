@@ -1,0 +1,29 @@
+libapache2-mod-cosign (3.2.0~luns0) unstable; urgency=low
+
+  * Upgrade to Cosign 3.2.0
+
+ -- Andrew Nicols <andrew.nicols@luns.net.uk>  Fri, 25 May 2012 13:47:27 +0100
+
+libapache2-mod-cosign (1.0.1) unstable; urgency=low
+
+  * Fix apache restart not being triggered in postinst
+  * Remove quilt in rules file - not applying patches
+
+ -- Dan Poltawski <dan.poltawski@luns.net.uk>  Tue, 22 Feb 2011 10:59:04 +0000
+
+libapache2-mod-cosign (1.0.0) maverick; urgency=low
+
+  * Added full packaging including:
+    - Cron for clearning up old cache files
+    - Copyright info
+    - Apache Module Load script
+    - Follow debian convenetions for enabling/disabling modules
+      in postinst/prerm
+
+ -- Dan Poltawski <dan.poltawski@luns.net.uk>  Tue, 22 Feb 2011 09:50:57 +0000
+
+libapache2-mod-cosign (0.0.1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Dan Poltawski <dan.poltawski@luns.net.uk>  Mon, 21 Feb 2011 16:28:19 +0000
