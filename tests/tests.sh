@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # run a series of sanity checks against cosignd and cosign.cgi.
 
