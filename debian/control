@@ -8,5 +8,7 @@ Standards-Version: 3.7.3
 Package: libapache2-mod-cosign
 Architecture: any
 Depends: apache2-mpm-prefork, apache2.2-common, ${shlibs:Depends}
+Replaces: libapache2-mod-cosign (<= 3.2.0~luns1)
+Breaks: libapache2-mod-cosign (<= 3.2.0~luns1)
 Description: Cosign Auth Module
  Packaging for Cosign Module

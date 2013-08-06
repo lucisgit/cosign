@@ -1,3 +1,10 @@
+libapache2-mod-cosign (3.2.0~lancs2) unstable; urgency=low
+
+  * Fix tests.
+  * Build using prefork apache.
+
+ -- Ruslan Kabalin <r.kabalin@lancaster.ac.uk>  Tue, 06 Aug 2013 10:05:41 +0100
+
 libapache2-mod-cosign (3.2.0~luns1) unstable; urgency=low
 
   * Update packaging to actually include the right version of mod_cosign
