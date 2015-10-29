@@ -1,3 +1,11 @@
+libapache2-mod-cosign (3.2.0~luns3) unstable; urgency=medium
+
+  * Cherry pick fixes from 3.3.0 to make mod compile for Apache 2.4.
+  * Bump deb compat to version 9
+  * Fix package dependencies.
+
+ -- Ruslan Kabalin <r.kabalin@lancaster.ac.uk>  Thu, 29 Oct 2015 16:56:49 +0000
+
 libapache2-mod-cosign (3.2.0~luns2) unstable; urgency=low
 
   * Fix tests.
