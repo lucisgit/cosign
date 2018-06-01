@@ -1,15 +1,17 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-#  # Uncomment this to turn on verbose mode.
+# Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
 %:
-	        dh $@
+	dh $@
 
 override_dh_auto_configure:
-		autoconf
-		dh_auto_configure -- --prefix=$(CURDIR)/debian/libapache2-mod-cosign --enable-apache2=/usr/bin/apxs2 \
-		    --enable-krb --with-filterdb=/var/cosign/filter --with-cosignconf=/etc/cosign.conf
+	dh_auto_configure -- --prefix=$(CURDIR)/debian/libapache2-mod-cosign \
+	--enable-apache2=/usr/bin/apxs2 \
+	--enable-krb \
+	--with-filterdb=/var/cosign/filter \
+	--with-cosignconf=/etc/cosign.conf
 
 # Disable dh_auto_install as it does the wrong thing
 override_dh_auto_install:

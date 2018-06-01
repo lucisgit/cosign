@@ -2,11 +2,11 @@ Source: libapache2-mod-cosign
 Section: web
 Priority: optional
 Maintainer: Dan Poltawski <dan.poltawski@luns.net.uk>
-Build-Depends: debhelper (>= 9), apache2-dev (>= 2.4), libkrb5-dev (>= 1.12)
+Build-Depends: debhelper (>= 9), apache2-dev (>= 2.4), libkrb5-dev (>= 1.15), libssl-dev (>= 1.1), libsasl2-dev (>=2.1)
 Standards-Version: 3.7.3
 
 Package: libapache2-mod-cosign
 Architecture: any
-Depends: apache2-mpm-prefork, apache2.2-common, ${shlibs:Depends}
+Depends: apache2, ${shlibs:Depends}
 Description: Cosign Auth Module
  Packaging for Cosign Module
